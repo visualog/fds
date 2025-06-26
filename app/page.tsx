@@ -12,14 +12,14 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
           <Link 
             href="/docs" 
-            className="p-4 border rounded-lg hover:bg-gray-100 transition-colors"
+            className="p-4 border rounded-lg hover:bg-gray-700 active:bg-gray-600 transition-colors"
           >
             <h2 className="text-2xl font-bold">문서</h2>
             <p>디자인 시스템 사용 가이드와 문서를 확인하세요.</p>
           </Link>
           <Link 
             href="/components" 
-            className="p-4 border rounded-lg hover:bg-gray-100 transition-colors"
+            className="p-4 border rounded-lg hover:bg-gray-700 active:bg-gray-600 transition-colors"
           >
             <h2 className="text-2xl font-bold">컴포넌트</h2>
             <p>다양한 UI 컴포넌트를 살펴보세요.</p>
