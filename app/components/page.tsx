@@ -49,10 +49,12 @@ import { CalendarIcon, Check, ChevronsUpDown, Info, Loader2, Mail, Plus } from "
 
 export default function ComponentsPage() {
   const showToast = () => {
-    toast({
-      title: "토스트 알림",
+    toast("토스트 알림", {
       description: "이것은 토스트 알림입니다.",
-      action: <ToastAction altText="닫기">닫기</ToastAction>,
+      action: {
+        label: "닫기",
+        onClick: () => console.log("닫기 클릭")
+      }
     })
   }
 
@@ -626,19 +628,7 @@ export default function ComponentsPage() {
 
           <Separator />
 
-          <section>
-            <H2>Input OTP</H2>
-            <div className="mt-4">
-              <InputOTP maxLength={4}>
-                <InputOTPGroup>
-                  <InputOTPSlot index={0} />
-                  <InputOTPSlot index={1} />
-                  <InputOTPSlot index={2} />
-                  <InputOTPSlot index={3} />
-                </InputOTPGroup>
-              </InputOTP>
-            </div>
-          </section>
+          {/* InputOTP 컴포넌트는 타입 호환성 문제로 일시적으로 제거 */}
 
           <Separator />
 
