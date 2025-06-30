@@ -1,0 +1,9 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/examples/login-form/page": "app/examples/login-form/page.js",
+  "/examples/dialog/page": "app/examples/dialog/page.js",
+  "/docs/page": "app/docs/page.js",
+  "/foundation/page": "app/foundation/page.js",
+  "/components/page": "app/components/page.js"
+}
